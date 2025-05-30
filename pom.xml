@@ -45,7 +45,7 @@
         <bus.version>[6.6.1,8.0.0]</bus.version>
         <jna.version>[5.12.1,)</jna.version>
         <logback.version>[1.2.11,)</logback.version>
-        <fastjson.version>[1.2.83,)</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
     <dependencies>
@@ -198,5 +198,14 @@
             </build>
         </profile>
     </profiles>
-
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>https://nexus.econta.wiki/repository/3rd_part_releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <url>https://nexus.econta.wiki/repository/3rd_part_snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
