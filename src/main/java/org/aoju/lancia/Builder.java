@@ -78,7 +78,8 @@ public class Builder {
     /**
      * 指定版本
      */
-    public static final String VERSION = "818858";
+  //  public static final String VERSION = "818858";
+    public static final String VERSION = "1553247";
     /**
      * 临时文件夹前缀
      */

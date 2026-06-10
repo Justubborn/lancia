@@ -266,7 +266,8 @@ public class ChromeLauncher implements Launcher {
                 return null;
             };
 
-            browserContextIds = result.getObject("browserContextIds", TypeReference.LIST_STRING);
+            browserContextIds = result.getObject("browserContextIds", new TypeReference<List<String>>() {
+            });
             return Browser.create(connection, browserContextIds, options.getIgnoreHTTPSErrors(), options.getViewport(), null, closeFunction);
         } catch (IOException e) {
             throw new RuntimeException(e);
